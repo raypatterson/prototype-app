@@ -1,3 +1,3 @@
-#  Scrolling Prototype
+#  Prototype App
 
 > Just what it sounds like.
