@@ -1,0 +1,81 @@
+{
+  "name": "prototype-app",
+  "description": "Prototype a web app.",
+  "version": "0.0.0-1",
+  "author": {
+    "name": "Ray Patterson",
+    "email": "github.raypatterson@gmail.com"
+  },
+  "bugs": "https://github.com/raypatterson/prototype-app/issues",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    },
+    "ghooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run test"
+    },
+    "links": [
+      "../full-metal-webpack",
+      "../passthough-loader"
+    ]
+  },
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "font-awesome": "^4.6.3",
+    "hack-font": "^2.0.19"
+  },
+  "devDependencies": {
+    "@raypatterson/full-metal-webpack": "github:raypatterson/full-metal-webpack",
+    "commitizen": "^2.8.6",
+    "cz-conventional-changelog": "^1.2.0",
+    "fixpack": "^2.3.1",
+    "linkr": "^0.1.0",
+    "updtr": "^0.1.10",
+    "xo": "^0.15.0"
+  },
+  "engines": {
+    "node": ">=6.4.0",
+    "npm": ">=3.10.0"
+  },
+  "homepage": "https://github.com/raypatterson/prototype-app/",
+  "keywords": [
+    "app",
+    "prototype",
+    "web"
+  ],
+  "license": "UNLICENSED",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "Ray Patterson",
+      "email": "github.raypatterson@gmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:raypatterson/prototype-app.git"
+  },
+  "scripts": {
+    "build": "fmw -p",
+    "commit": "git-cz",
+    "dev": "fmw",
+    "link": "linkr",
+    "link:rm": "linkr remove && npm i",
+    "test": "npm run test:pass",
+    "test:fail": "exit 1",
+    "test:pass": "exit 0",
+    "upgrade": "updtr && fixpack"
+  },
+  "xo": {
+    "envs": [
+      "node",
+      "browser",
+      "commonjs"
+    ],
+    "esnext": false,
+    "space": false,
+    "globals": [],
+    "rules": {}
+  }
+}
