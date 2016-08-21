@@ -1,5 +1,8 @@
 'use strict';
 
+const fs = require('fs-jetpack');
+const _ = require('lodash');
+
 var config = {
 	public: {
 		data: {
@@ -11,7 +14,12 @@ var config = {
 				'/common/images/b/test-2.jpg'
 			]
 		}
+	},
+
+	template: (loader, options) => {
+		return _.template(fs.read(loader.resourcePath))(options);
 	}
+
 };
 
 module.exports = config;
