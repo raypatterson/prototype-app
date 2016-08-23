@@ -16,8 +16,7 @@
       "pre-push": "npm run test"
     },
     "links": [
-      "../full-metal-webpack",
-      "../passthough-loader"
+      "../full-metal-webpack"
     ]
   },
   "dependencies": {
