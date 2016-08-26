@@ -6,3 +6,7 @@ require('./index.scss');
 require('common/scripts');
 
 console.log('index');
+
+(function IIFE() {
+	return 'foo';
+})();

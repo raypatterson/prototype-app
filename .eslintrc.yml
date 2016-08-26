@@ -1,0 +1,7 @@
+---
+extends:
+  - './node_modules/@raypatterson/full-metal-webpack/cfg/_eslintrc.js'
+settings:
+  import/resolver:
+    webpack:
+      config: './node_modules/@raypatterson/full-metal-webpack/webpack.dev.config.js'

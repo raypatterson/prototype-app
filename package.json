@@ -33,8 +33,7 @@
     "cz-conventional-changelog": "^1.2.0",
     "fixpack": "^2.3.1",
     "linkr": "^0.1.0",
-    "updtr": "^0.2.1",
-    "xo": "^0.16.0"
+    "updtr": "^0.2.1"
   },
   "engines": {
     "node": ">=6.4.0",
@@ -68,16 +67,5 @@
     "test:fail": "exit 1",
     "test:pass": "exit 0",
     "upgrade": "updtr && fixpack"
-  },
-  "xo": {
-    "envs": [
-      "node",
-      "browser",
-      "commonjs"
-    ],
-    "esnext": false,
-    "space": false,
-    "globals": [],
-    "rules": {}
   }
 }
