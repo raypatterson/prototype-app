@@ -17,7 +17,9 @@ var config = {
 	},
 
 	template: (loader, options) => {
+
 		return _.template(fs.read(loader.resourcePath))(options);
+
 	}
 
 };
