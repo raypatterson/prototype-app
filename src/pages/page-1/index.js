@@ -1,6 +1,6 @@
 'use strict';
 
-// require('common/styles/index.scss');
+require('common/styles/index.scss');
 require('./index.scss');
 
 require('common/scripts');

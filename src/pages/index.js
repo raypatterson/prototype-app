@@ -5,10 +5,8 @@ require('./index.scss');
 
 require('common/scripts');
 
-console.log('index');
-
 (function IIFE() {
 
-	return 'foo';
+	console.log('index');
 
 })();
