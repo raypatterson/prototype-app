@@ -1,0 +1,7 @@
+{
+  "files": {
+    "src": [
+      "src/**/*.{js,jsx,css,scss}"
+    ]
+  }
+}

@@ -11,3 +11,7 @@ body {
 .flex {
 	display: flex;
 }
+
+.cssgradients body {
+	background-image: linear-gradient(cornflowerblue, rebeccapurple);
+}
