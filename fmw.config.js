@@ -24,4 +24,6 @@ var config = {
 
 };
 
+console.info('Loading: FMW Config – DEFAULT');
+
 module.exports = config;
