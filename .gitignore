@@ -1,5 +1,5 @@
 
-# Created by https://www.gitignore.io/api/bower,dreamweaver,dropbox,eclipse,elasticbeanstalk,emacs,gitbook,grunt,intellij,jekyll,jetbrains,jspm,linux,node,osx,sass,sublimetext,svn,textmate,windows
+# Created by https://www.gitignore.io/api/dreamweaver,eclipse,emacs,intellij,jetbrains,linux,node,osx,sass,sublimetext,textmate,windows
 
 ### JetBrains ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm
@@ -55,21 +55,6 @@ fabric.properties
 # .idea/misc.xml
 # *.ipr
 
-
-### Bower ###
-bower_components
-.bower-cache
-.bower-registry
-.bower-tmp
-
-
-### Dropbox ###
-# Dropbox settings and caches
-.dropbox
-.dropbox.attr
-.dropbox.cache
-
-
 ### Eclipse ###
 
 .metadata
@@ -124,9 +109,6 @@ local.properties
 .recommenders/
 
 
-### ElasticBeanstalk ###
-.elasticbeanstalk/
-
 ### Emacs ###
 # -*- mode: gitignore; -*-
 *~
@@ -170,32 +152,6 @@ flycheck_*.el
 
 # projectiles files
 .projectile
-
-### GitBook ###
-# Node rules:
-## Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
-.grunt
-
-## Dependency directory
-## Commenting this out is preferred by some people, see
-## https://docs.npmjs.com/misc/faq#should-i-check-my-node_modules-folder-into-git
-node_modules
-
-# Book build output
-_book
-
-# eBook build output
-*.epub
-*.mobi
-*.pdf
-
-
-### grunt ###
-# Grunt usually compiles files inside this directory
-dist/
-
-# Grunt usually preprocesses files such as coffeescript, compass... inside the .tmp directory
-.tmp/
 
 
 ### Intellij ###
@@ -253,12 +209,6 @@ fabric.properties
 # *.ipr
 
 
-### Jekyll ###
-_site/
-.sass-cache/
-.jekyll-metadata
-
-
 ### Dreamweaver ###
 # DW Dreamweaver added files
 _notes
@@ -267,10 +217,6 @@ configs/
 dwsync.xml
 dw_php_codehinting.config
 *.mno
-
-
-### jspm ###
-jspm_packages
 
 
 ### Linux ###
@@ -390,10 +336,6 @@ bh_unicode_properties.cache
 GitHub.sublime-settings
 
 
-### SVN ###
-.svn/
-
-
 ### TextMate ###
 *.tmproj
 *.tmproject
@@ -421,4 +363,7 @@ $RECYCLE.BIN/
 *.lnk
 
 ### Project ###
+dist
+.tmp
+.cache
 .happypack
