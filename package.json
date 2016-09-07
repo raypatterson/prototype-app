@@ -62,7 +62,7 @@
     "build": "fmw --production --config ./fmw.production.config.js",
     "commit": "git-cz",
     "dev": "fmw --debug",
-    "dev:clean": "rm -rf .cache && npm run dev",
+    "dev:clean": "rm -rf .tmp && npm run dev",
     "link": "linkr",
     "link:rm": "linkr remove && npm i",
 		"task": "ntl .",
