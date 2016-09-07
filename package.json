@@ -59,13 +59,14 @@
     "url": "git@github.com:raypatterson/prototype-app.git"
   },
   "scripts": {
-    "build": "fmw --production --config ./fmw.production.config.js",
+    "build": "fmw --clean --production --config ./fmw.production.config.js",
     "commit": "git-cz",
-    "dev": "fmw --debug",
-    "dev:clean": "rm -rf .tmp && npm run dev",
+    "dev": "fmw",
+    "dev:debug": "fmw --debug",
+    "help": "fmw --help",
     "link": "linkr",
     "link:rm": "linkr remove && npm i",
-		"task": "ntl .",
+    "task": "ntl .",
     "test": "npm run test:pass",
     "test:fail": "exit 1",
     "test:pass": "exit 0",
