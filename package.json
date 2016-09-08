@@ -23,9 +23,7 @@
     "bootstrap-sass": "^3.3.7",
     "fastclick": "^1.0.6",
     "font-awesome": "^4.6.3",
-    "fs-jetpack": "^0.9.2",
-    "hack-font": "^2.0.19",
-    "lodash": "^4.15.0"
+    "hack-font": "^2.0.19"
   },
   "devDependencies": {
     "@raypatterson/full-metal-webpack": "github:raypatterson/full-metal-webpack",
@@ -60,9 +58,10 @@
   },
   "scripts": {
     "build": "fmw --clean --production --config ./fmw.production.config.js",
+    "build:preview": "npm run build -- --open",
     "commit": "git-cz",
     "dev": "fmw",
-    "dev:debug": "fmw --debug",
+    "dev:debug": "npm run dev -- --debug",
     "help": "fmw --help",
     "link": "linkr",
     "link:rm": "linkr remove && npm i",
