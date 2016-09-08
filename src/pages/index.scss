@@ -3,11 +3,14 @@
 @import '~common/styles/index';
 
 body {
-	background: red;
+	background: url('./assets/background.jpg');
+	background-size: cover;
 }
 
-.background-img {
-	width: 500px;
-	height: 500px;
-	background: url('~common/images/a/test-1.jpg') repeat;
+.flex {
+	display: flex;
+}
+
+.cssgradients .flex {
+	background-image: linear-gradient(cornflowerblue, rebeccapurple);
 }
