@@ -9,5 +9,3 @@ if (Modernizr.promises) {
 	console.log('Promises can be made!');
 
 }
-
-console.log('common');

@@ -1,8 +1,5 @@
 'use strict';
 
-require('common/styles/index.scss');
-require('./index.scss');
-
-require('common/scripts');
+require('common');
 
 console.log('page-1');
