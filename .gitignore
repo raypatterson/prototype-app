@@ -367,3 +367,4 @@ dist
 .tmp
 .cache
 .happypack
+.imdone
