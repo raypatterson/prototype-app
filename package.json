@@ -23,7 +23,7 @@
     "hack-font": "~2.0.19"
   },
   "devDependencies": {
-    "@raypatterson/full-metal-webpack": "github:raypatterson/full-metal-webpack",
+    "@raypatterson/full-metal-webpack": "git+ssh://git@github.com/raypatterson/full-metal-webpack#master",
     "commitizen": "~2.9.5",
     "cz-conventional-changelog": "~1.2.0",
     "eslint": "~3.14.0",
@@ -61,7 +61,7 @@
     "dev": "fmw",
     "dev:debug": "npm run dev -- --debug",
     "help": "fmw --help",
-    "link": "npm-autolink",
+    "link": "npm-autolink link",
     "link:rm": "npm-autolink remove",
     "ls": "ntl .",
     "test": "npm run test:pass",
