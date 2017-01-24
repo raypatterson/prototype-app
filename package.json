@@ -14,29 +14,27 @@
     "ghooks": {
       "pre-commit": "npm run lint",
       "pre-push": "npm run test"
-    },
-    "links": [
-      "../full-metal-webpack"
-    ]
+    }
   },
   "dependencies": {
-    "bootstrap-sass": "^3.3.7",
-    "fastclick": "^1.0.6",
-    "font-awesome": "^4.7.0",
-    "hack-font": "^2.0.19"
+    "bootstrap-sass": "~3.3.7",
+    "fastclick": "~1.0.6",
+    "font-awesome": "~4.7.0",
+    "hack-font": "~2.0.19"
   },
   "devDependencies": {
     "@raypatterson/full-metal-webpack": "github:raypatterson/full-metal-webpack",
-    "commitizen": "^2.9.5",
-    "cz-conventional-changelog": "^1.2.0",
-    "fixpack": "^2.3.1",
-    "linkr": "^0.1.0",
-    "ntl": "^1.1.3",
-    "updtr": "^0.2.3"
+    "commitizen": "~2.9.5",
+    "cz-conventional-changelog": "~1.2.0",
+    "eslint": "~3.14.0",
+    "eslint-config-xo": "~0.17.0",
+    "fixpack": "~2.3.1",
+    "npm-autolink": "~0.4.1",
+    "ntl": "~1.1.3",
+    "updtr": "~0.2.3"
   },
   "engines": {
-    "node": ">=6.4.0",
-    "npm": ">=3.10.0"
+    "node": ">=6"
   },
   "homepage": "https://github.com/raypatterson/prototype-app/",
   "keywords": [
@@ -63,9 +61,9 @@
     "dev": "fmw",
     "dev:debug": "npm run dev -- --debug",
     "help": "fmw --help",
-    "link": "linkr",
-    "link:rm": "linkr remove && npm i",
-    "task": "ntl .",
+    "link": "npm-autolink",
+    "link:rm": "npm-autolink remove",
+    "ls": "ntl .",
     "test": "npm run test:pass",
     "test:fail": "exit 1",
     "test:pass": "exit 0",

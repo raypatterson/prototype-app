@@ -1,3 +1,0 @@
----
-extends:
-  - './node_modules/@raypatterson/full-metal-webpack/cfg/eslint.config.js'
