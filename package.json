@@ -30,6 +30,8 @@
     "eslint-config-xo": "~0.17.0",
     "fixpack": "~2.3.1",
     "npm-autolink": "~0.4.1",
+    "npm-link-check": "~1.2.0",
+    "npm-run-all": "~4.0.1",
     "ntl": "~1.1.3",
     "updtr": "~0.2.3"
   },
@@ -42,7 +44,7 @@
     "prototype",
     "web"
   ],
-  "license": "UNLICENSED",
+  "license": "MIT",
   "main": "index.js",
   "maintainers": [
     {
@@ -56,17 +58,14 @@
   },
   "scripts": {
     "build": "fmw --clean --production --config ./fmw.production.config.js",
-    "build:preview": "npm run build -- --open",
     "commit": "git-cz",
     "dev": "fmw",
-    "dev:debug": "npm run dev -- --debug",
-    "help": "fmw --help",
     "link": "npm-autolink link",
     "link:rm": "npm-autolink remove",
+		"lint": "eslint --fix src",
     "ls": "ntl .",
-    "test": "npm run test:pass",
-    "test:fail": "exit 1",
-    "test:pass": "exit 0",
+    "test": "npm-run-all --parallel test:*",
+    "test:link": "npm-link-check",
     "upgrade": "updtr && fixpack"
   }
 }
