@@ -2,10 +2,10 @@
 
 require('fastclick').attach(document.body);
 
-var Modernizr = require('modernizr');
+import Modernizr from 'modernizr';
 
 if (Modernizr.promises) {
 
-	console.log('Promises can be made!');
+	console.log('Promises can be made.');
 
 }

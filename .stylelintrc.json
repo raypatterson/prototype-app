@@ -1,5 +1,5 @@
 {
 	"extends": [
-		"./node_modules/@raypatterson/full-metal-webpack/cfg/stylelint.config.js"
+		"./node_modules/@raypatterson/full-metal-webpack/cfg/.stylelintrc.js"
 	]
 }
